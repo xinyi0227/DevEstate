@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    height: 250px;
+    background-image: url('background.png'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav ul li a.wallet {
+    background-color: #444;
+    border-radius: 4px;
+}
+
+.hero {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+main {
+    padding: 40px;
+}
+
+.funding-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.program-details {
+    flex: 1;
+}
+
+.funding-controls {
+    display: flex;
+    align-items: center;
+}
+
+.funding-controls button {
+    padding: 10px;
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#amount {
+    font-size: 18px;
+    margin: 0 10px;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.gallery .image img {
+    max-width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.image{
+    width: 1000px;
+}
+
+.image-grid .image{
+    width: 700px;
+}
+
+.image-grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#fund5 {
+    width: 70%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-credit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}

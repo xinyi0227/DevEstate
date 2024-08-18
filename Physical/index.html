@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeEstate - Residence Purchasing Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            position: relative;
+            height: 250px;
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        nav ul li a.wallet {
+            background-color: #444;
+            border-radius: 4px;
+        }
+
+        .hero {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-card .content {
+            padding: 15px;
+        }
+        .project-card .content h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+        .project-card .content p {
+            margin: 0 0 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .project-card .content button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .project-card .content button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            width: 30%;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p, .footer-section ul {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .footer-credit {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">DeEstate</div>
+            <nav>
+                <ul>
+                    <li><a href="../Service/index.html">Services</a></li>
+                    <li><a href="../Funding/index.html">Funding</a></li>
+                    <li><a href="#">For Developers</a></li>
+                    <!-- <li><a href="#">Unit Sell</a></li> -->
+                    <li><a href="#" class="wallet">Connect Wallet</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <h1>Physical Project</h1>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Physical Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="pic1.jpg" alt="StayNest">
+                <div class="content">
+                    <h3>Made by: AAA</h3>
+                    <p>StayNest</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="pic2.jpg" alt="RentEase">
+                <div class="content">
+                    <h3>Made by: BBB</h3>
+                    <p>RentEase</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="pic3.jpg" alt="HomeLink">
+                <div class="content">
+                    <h3>Made by: CCC</h3>
+                    <p>HomeLink</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="pic4.jpg" alt="Rentify">
+                <div class="content">
+                    <h3>Made by: DDD</h3>
+                    <p>Rentify</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About DeEstate</h3>
+                <p>DeEstate is revolutionizing real estate investment through blockchain technology, offering secure and accessible opportunities for everyone.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../Main/main.html">Home</a></li>
+                    <li><a href="../Funding/index.html">Funding</a></li>
+                    <li><a href="../Service/index.html">Services</a></li>
+                    <!-- <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p>Follow us on social media to stay updated with the latest news and offerings.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-credit">© 2024 DeEstate. All rights reserved.</p>
+    </footer>
+</body>
+</html>
