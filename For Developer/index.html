@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Funding Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo"><a href="../Main/index.html">DeEstate</a></div>
+            <nav>
+                <ul>
+                    <li><a href="../Service/index.html">Services</a></li>
+                    <li><a href="../Funding/index.html">Funding</a></li>
+                    <li><a href="../For Developer/index.html">For Developers</a></li>
+                    <!-- <li><a href="#">Unit Sell</a></li> -->
+                    <li><a href="#" class="wallet">Connect Wallet</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <h1>Quadratic Funding Project</h1>
+            <h2>At DeEstate, we offer a range of advanced funding features designed to empower both 
+                investors and project developers. Our platform integrates cutting-edge technology to 
+                streamline and enhance the real estate funding process.</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-submission">
+            <h2>Submit Your Project</h2>
+            <form action="submit_project.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="project-title">Project Title:</label>
+                    <input type="text" id="project-title" name="project_title" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="project-description">Project Description:</label>
+                    <textarea id="project-description" name="project_description" rows="4" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label for="project-fund">Fund Needed (in ETH):</label>
+                    <input type="number" id="project-fund" name="project_fund" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="project-images">Upload Images:</label>
+                    <input type="file" id="project-images" name="project_images[]" accept="image/*" multiple>
+                    <small>Upload multiple images (JPG, PNG, GIF)</small>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit">Submit Project</button>
+                </div>
+            </form>
+        </section>      
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About DeEstate</h3>
+                <p>DeEstate is revolutionizing real estate investment through blockchain technology, offering secure and accessible opportunities for everyone.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../Main/main.html">Home</a></li>
+                    <li><a href="../Funding/index.html">Funding</a></li>
+                    <li><a href="../Service/index.html">Services</a></li>
+                    <!-- <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p>Follow us on social media to stay updated with the latest news and offerings.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-credit">© 2024 DeEstate. All rights reserved.</p>
+    </footer>
+</body>
+</html>
